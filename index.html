@@ -5,10 +5,65 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Sistema de Gestión - Laboratorio de Metrología</title>  
 </head>
+<style>
+    body {
+        font-family: Arial, sans-serif;
+        background-color: #f4f4f4;
+        margin: 0;
+        padding: 0;
+    }
+    .container {
+        width: 90%;
+        max-width: 1200px;
+        margin: 20px auto;
+        background-color: #fff;
+        padding: 20px;
+        box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    }
+    header {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin-bottom: 20px;
+    }
+    .grid {
+        display: flex;
+        gap: 20px;
+        margin-bottom: 20px;
+    }
+    .card {
+        flex: 1;
+        background-color: #e3e3e3;
+        padding: 20px;
+        border-radius: 5px;
+        text-align: center;
+    }
+    table {
+        width: 100%;
+        border-collapse: collapse;
+    }
+    th, td {
+        padding: 12px;
+        border-bottom: 1px solid #ddd;
+    }
+    th {
+        background-color: #f2f2f2;
+    }
+    .status-badge {
+        padding: 5px 10px;
+        border-radius: 12px;
+        color: #fff;
+    }
+    .calibrado {
+        background-color: #28a745; /* Verde */
+    }
+</style>
 <body>
+    <h1 style="text-align: center; margin-top: 20px;">Sistema de Gestión - Laboratorio de Metrología</h1>
+    
     <div class="container">
         <header>
-            <h1>Panel de Instrumentos</h1>
+            <h2>Panel de Instrumentos</h2>
             <span id="user-display">Operador: Admin</span>
         </header>
 
