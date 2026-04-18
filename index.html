@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sistema de Gestión - Laboratorio de Metrología</title>  
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>Panel de Instrumentos</h1>
+            <span id="user-display">Operador: Admin</span>
+        </header>
+
+        <div class="grid">
+            <div class="card">
+                <h3>Pendientes</h3>
+                <p style="font-size: 2rem; margin: 0;">12</p>
+            </div>
+            <div class="card">
+                <h3>Calibrados hoy</h3>
+                <p style="font-size: 2rem; margin: 0;">08</p>
+            </div>
+        </div>
+
+        <table>
+            <thead>
+                <tr>
+                    <th>Instrumento</th>
+                    <th>ID Serie</th>
+                    <th>Estado</th>
+                    <th>Última Revisión</th>
+                </tr>
+            </thead>
+            <tbody id="table-body">
+                <tr>
+                    <td>Micrómetro Digital</td>
+                    <td>MD-2024-01</td>
+                    <td><span class="status-badge calibrado">En Espera</span></td>
+                    <td>12/04/2026</td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+</body>
+</html>
